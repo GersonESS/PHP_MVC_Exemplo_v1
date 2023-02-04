@@ -1,4 +1,4 @@
-<?php
+include<?php
 
 /**
  * Classes Controller são responsáveis por processar as requisições do usuário.
