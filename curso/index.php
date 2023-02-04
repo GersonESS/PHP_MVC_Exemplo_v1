@@ -1,5 +1,12 @@
 <?php
-
-
-$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-echo $url;
+ try 
+ {
+     $pdo = new PDO("mysql:dbname=cadastro;host=localhost","root","gabibi89");
+ }  
+ catch(PDOException $e) {
+    echo "Erro ".$e->getMessage();
+ } 
+ catch(Exception $e)
+ {
+    echo "Erro ".$e->getMessage();
+ }      
